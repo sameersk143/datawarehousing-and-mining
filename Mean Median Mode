@@ -1,0 +1,9 @@
+data=read.csv("student2.csv")
+View(data)
+mean(data$marks)
+
+median(data$marks)
+
+mode(data$marks)
+
+summary(data)
