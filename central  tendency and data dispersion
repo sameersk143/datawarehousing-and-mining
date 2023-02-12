@@ -1,0 +1,11 @@
+data=read.csv("student2.csv")
+View(data)
+mean(data$marks)
+median(data$marks)
+mode(data$marks)
+summary(data)
+IQR(data$marks)
+quantile(data$marks)
+range(data$marks)
+outlier_values<-boxplot.stats(data$marks)$out
+print(outlier_values)
