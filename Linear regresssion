@@ -1,0 +1,8 @@
+d <- read.csv("diabetes.csv")
+
+Relation <- lm(d$BloodPressure~d$Age)
+Png<- (file="linear regression.png")
+plot(d$Age, d$BloodPressure, col="green", main= "Linear Regression Analysis", abline= (lm(d$BloodPressure~ d$Age)), xlab = "BloodPressure", ylanb= "Age")
+A<- data.frame(d$Age)
+Result<- predict(Relation, A)
+print(Result)
