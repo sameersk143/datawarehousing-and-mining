@@ -1,0 +1,7 @@
+data=read.csv("student2.csv")
+View(data)
+IQR(data$marks)
+
+quantile(data$marks)
+
+range(data$marks)
